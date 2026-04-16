@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radera konto - OV App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a; color: #e2e8f0; line-height: 1.7;
+            padding: 24px; max-width: 800px; margin: 0 auto;
+        }
+        h1 { color: #fecc02; font-size: 1.8rem; margin-bottom: 8px; }
+        .subtitle { color: #94a3b8; font-size: 0.95rem; margin-bottom: 32px; }
+        h2 { color: #60a5fa; font-size: 1.15rem; margin: 28px 0 10px; }
+        p, li { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 10px; }
+        ul, ol { padding-left: 20px; margin-bottom: 12px; }
+        .card {
+            background: #1e293b; border: 1px solid #334155;
+            border-radius: 12px; padding: 20px; margin-bottom: 16px;
+        }
+        .badge {
+            display: inline-block; background: #991b1b; color: #fecaca;
+            font-size: 0.75rem; padding: 4px 10px; border-radius: 6px;
+            margin-bottom: 16px;
+        }
+        .footer {
+            margin-top: 40px; padding-top: 20px; border-top: 1px solid #334155;
+            color: #64748b; font-size: 0.85rem; text-align: center;
+        }
+        a { color: #60a5fa; }
+        strong { color: #f1f5f9; }
+    </style>
+</head>
+<body>
+    <h1>Radera ditt OV App-konto</h1>
+    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-04-16</p>
+    <span class="badge">Kontoradering</span>
+
+    <div class="card">
+        <h2>1. Så här raderar du ditt konto i appen</h2>
+        <p>Det snabbaste sättet att radera ditt konto och all tillhörande data är direkt i appen:</p>
+        <ol>
+            <li>Öppna OV App och logga in.</li>
+            <li>Gå till <strong>Inställningar</strong>.</li>
+            <li>Välj <strong>Premium &amp; konto</strong>.</li>
+            <li>Tryck på <strong>Radera konto</strong>.</li>
+            <li>Bekräfta genom att skriva ordet <strong>RADERA</strong> i rutan.</li>
+            <li>Tryck på <strong>Radera permanent</strong>.</li>
+        </ol>
+        <p>Kontot och tillhörande data raderas omedelbart.</p>
+    </div>
+
+    <div class="card">
+        <h2>2. Begär radering utan att ha tillgång till appen</h2>
+        <p>Om du har avinstallerat appen eller inte kan logga in kan du begära radering via e-post:</p>
+        <p><strong>E-post:</strong> <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a></p>
+        <p>Ange följande i ditt meddelande:</p>
+        <ul>
+            <li>Ämnesrad: <em>Begäran om kontoradering &ndash; OV App</em></li>
+            <li>Den e-postadress du använde för att logga in (Google-konto).</li>
+        </ul>
+        <p>Vi bekräftar och slutför raderingen inom 30 dagar.</p>
+    </div>
+
+    <div class="card">
+        <h2>3. Vilka uppgifter raderas</h2>
+        <p>När ditt konto raderas tas följande bort permanent:</p>
+        <ul>
+            <li>E-postadress och användar-ID (Firebase Authentication).</li>
+            <li>Kontoprofil och inställningar.</li>
+            <li>Premium-status och prenumerationsdata som lagras i vår databas.</li>
+            <li>Quizhistorik och resultat.</li>
+            <li>Alla personliga uppgifter kopplade till kontot i Cloud Firestore.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Uppgifter som kan behållas</h2>
+        <p>Vissa uppgifter kan behållas under en begränsad tid av tekniska eller juridiska skäl:</p>
+        <ul>
+            <li><strong>Anonymiserade analysdata och kraschloggar</strong> &mdash; sparas i upp till 60 dagar av Firebase/Google och innehåller inga personuppgifter.</li>
+            <li><strong>Köpkvitton hos Google Play</strong> &mdash; hanteras av Google enligt Google Plays policyer. OV App kontrollerar inte dessa uppgifter.</li>
+            <li><strong>Bokföringsunderlag</strong> &mdash; kan behållas i upp till 7 år enligt svensk bokföringslag (1999:1078) om du gjort ett köp.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5. Avsluta pågående prenumeration</h2>
+        <p>Kontoradering stoppar <strong>inte</strong> automatiskt en aktiv Google Play-prenumeration. Säg upp prenumerationen separat i Google Play-appen innan du raderar kontot:</p>
+        <ol>
+            <li>Öppna Google Play-appen.</li>
+            <li>Tryck på din profilbild &rarr; <strong>Betalningar och prenumerationer</strong> &rarr; <strong>Prenumerationer</strong>.</li>
+            <li>Välj <strong>OV App</strong> och tryck på <strong>Avsluta prenumeration</strong>.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>6. Kontakt</h2>
+        <p>Vid frågor om kontoradering eller personuppgifter:</p>
+        <p><strong>E-post:</strong> <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a></p>
+        <p><strong>Utvecklare:</strong> VivaxLogic</p>
+    </div>
+
+    <div class="footer">
+        <p>OV App &mdash; Privat informations- och &ouml;vningsst&ouml;d f&ouml;r ordningsvakter i Sverige</p>
+        <p>Se &auml;ven <a href="privacy-policy.html">Sekretesspolicy</a> och <a href="terms.html">Anv&auml;ndarvillkor</a></p>
+    </div>
+</body>
+</html>

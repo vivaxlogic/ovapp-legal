@@ -34,7 +34,7 @@
 </head>
 <body>
     <h1>Sekretesspolicy</h1>
-    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-04-14</p>
+    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-06-05</p>
     <span class="badge">GDPR-kompatibel</span>
 
     <div class="card">
@@ -57,12 +57,8 @@
 
     <div class="card">
         <h2>3. Analys och kraschrapportering</h2>
-        <p>Appen använder följande tjänster för att förbättra prestanda och stabilitet:</p>
-        <ul>
-            <li><strong>Firebase Analytics</strong> — samlar in anonymiserad användningsstatistik (t.ex. vilka skärmar som visas, sessionslängd). Ingen personligt identifierbar information kopplas till dessa data.</li>
-            <li><strong>Firebase Crashlytics</strong> — samlar automatiskt in kraschrapporter vid tekniska fel, inklusive enhetstyp, operativsystemversion och stacktrace. Detta hjälper oss att åtgärda buggar snabbt.</li>
-        </ul>
-        <p>Dessa tjänster drivs av Google och data hanteras enligt <a href="https://policies.google.com/privacy" target="_blank">Googles sekretesspolicy</a>.</p>
+        <p>OV App samlar <strong>inte</strong> in analys- eller användningsstatistik och innehåller varken annonserings-SDK, Firebase Analytics-SDK eller Firebase Crashlytics-SDK.</p>
+        <p>För att skydda tjänsten mot missbruk används tekniska integritetssignaler från Firebase App Check och Google Play Integrity. Dessa används inte för analys och kopplas inte till någon profilering av användaren.</p>
     </div>
 
     <div class="card">
@@ -75,12 +71,12 @@
         <p>Appen använder:</p>
         <ul>
             <li>Firebase Authentication — för inloggning med Google</li>
-            <li>Firebase Firestore — för lagring av kontoinformation</li>
-            <li>Firebase Analytics — för anonymiserad användningsstatistik</li>
-            <li>Firebase Crashlytics — för kraschrapportering</li>
-            <li>Google Play Billing — för köp</li>
+            <li>Firebase Firestore — för lagring av konto-, premium- och studieuppgifter</li>
+            <li>Firebase Cloud Functions — serverlogik för premium- och köpflöden</li>
+            <li>Firebase App Check och Google Play Integrity — skydd mot missbruk</li>
+            <li>Google Play Billing — för köp och prenumerationer</li>
         </ul>
-        <p>Ingen data delas med andra tredjeparter utöver ovan nämnda tjänster.</p>
+        <p>Uppgifterna används inte för annonsering och delas inte med andra tredjeparter utöver ovan nämnda tjänster.</p>
     </div>
 
     <div class="card">

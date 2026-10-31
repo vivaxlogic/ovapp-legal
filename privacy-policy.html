@@ -34,40 +34,51 @@
 </head>
 <body>
     <h1>Sekretesspolicy</h1>
-    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-06-05</p>
-    <span class="badge">GDPR-kompatibel</span>
+    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-10-31</p>
+    <span class="badge">Personuppgifter</span>
 
     <div class="card">
         <h2>1. Inledning</h2>
         <p>OV App tar din integritet på allvar. Denna sekretesspolicy beskriver hur vi hanterar information i appen.</p>
+        <p><strong>Personuppgiftsansvarig:</strong> Julio Rene Martinez Jovel, enskild näringsidkare under varumärket VivaxLogic. Kontakt: <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a>.</p>
     </div>
 
     <div class="card">
         <h2>2. Insamling av data</h2>
-        <p>OV App samlar in följande uppgifter när du loggar in med Google:</p>
+        <p>Följande uppgifter behandlas för kontot och appens funktioner:</p>
         <ul>
+            <li>Internt användar-ID</li>
             <li>E-postadress</li>
             <li>Visningsnamn</li>
             <li>Profilbild-URL</li>
             <li>Premium-status och köpdatum</li>
+            <li>Produkt, orderreferens, köpstatus och köptoken vid köpverifiering; token lagras som hashvärde i OV Apps databas</li>
             <li>Daglig quiz-räkning</li>
+            <li>Quizhistorik, resultat, studietid, scenariovisningar och yrkesmärken vid synkronisering av studieframsteg</li>
         </ul>
-        <p>Denna data lagras i Google Firebase Firestore (molntjänst inom EU) och är kopplad till ditt Google-konto. Appinställningar och quiz-statistik lagras lokalt på din enhet.</p>
+        <p>Kontoprofil och köpstatus lagras i Google Firebase. Kontodatabasen i Firestore finns i EU. Appinställningar och lokala studieframsteg sparas på enheten. När du är inloggad och synkronisering av studieframsteg är aktiverad överförs även quizhistorik, resultat, studietid, scenariovisningar och yrkesmärken till kontot i molnet, för synkronisering mellan enheter och verifiering av yrkesmärken.</p>
     </div>
 
     <div class="card">
-        <h2>3. Analys och kraschrapportering</h2>
-        <p>OV App samlar <strong>inte</strong> in analys- eller användningsstatistik och innehåller varken annonserings-SDK, Firebase Analytics-SDK eller Firebase Crashlytics-SDK.</p>
+        <h2>3. Ändamål och rättslig grund</h2>
+        <p>Konto, inloggning, studieframsteg som du synkroniserar och leverans eller återställning av köpt Premium behandlas för att tillhandahålla de funktioner du begär, med stöd av artikel 6.1 b i GDPR. Utan nödvändiga konto- och köpuppgifter kan motsvarande kontofunktioner och köpverifiering inte tillhandahållas.</p>
+        <p>Säkerhetskontroller, skydd mot köpbedrägerier och begränsade spärrar för raderade konton grundas på en intresseavvägning enligt artikel 6.1 f i GDPR. Intressena är att skydda konton, köp och tjänstens säkerhet. Behandlingen begränsas till vad som behövs för dessa ändamål. Uppgifterna används inte för annonsering.</p>
+        <p>Köpbehörigheter och yrkesmärken kontrolleras automatiskt utifrån köpstatus respektive quizresultat och kontroller mot missbruk. Supporten kan kontaktas om en kontroll eller uppgift behöver granskas.</p>
+    </div>
+
+    <div class="card">
+        <h2>4. Analys och kraschrapportering</h2>
+        <p>OV App innehåller varken annonserings-SDK, Firebase Analytics-SDK eller Firebase Crashlytics-SDK. Statistik om dina egna quiz behandlas för appens studie- och märkfunktioner enligt beskrivningen ovan.</p>
         <p>För att skydda tjänsten mot missbruk används tekniska integritetssignaler från Firebase App Check och Google Play Integrity. Dessa används inte för analys och kopplas inte till någon profilering av användaren.</p>
     </div>
 
     <div class="card">
-        <h2>4. Google Play Billing</h2>
-        <p>Vid köp hanteras betalningsuppgifter av Google Play i enlighet med Googles sekretesspolicy. Vi har aldrig tillgång till dina betalningsuppgifter eller kortinformation.</p>
+        <h2>5. Google Play Billing</h2>
+        <p>Google Play hanterar betalningen och kortuppgifterna. OV App tar inte emot ditt kortnummer, men behandlar köpets produkt, orderreferens, token, datum och status för att verifiera och återställa Premium. Google hanterar sina uppgifter enligt <a href="https://policies.google.com/privacy">Googles integritetspolicy</a>.</p>
     </div>
 
     <div class="card">
-        <h2>5. Tredjepartstjänster</h2>
+        <h2>6. Leverantörer och behandling utanför EU/EES</h2>
         <p>Appen använder:</p>
         <ul>
             <li>Firebase Authentication — för inloggning med Google</li>
@@ -76,35 +87,47 @@
             <li>Firebase App Check och Google Play Integrity — skydd mot missbruk</li>
             <li>Google Play Billing — för köp och prenumerationer</li>
         </ul>
-        <p>Uppgifterna används inte för annonsering och delas inte med andra tredjeparter utöver ovan nämnda tjänster.</p>
+        <p>Google och dess underbiträden behandlar uppgifter för att leverera dessa tjänster. Firestore-databasen ligger i EU, men detta gäller inte all behandling: Firebase Authentication behandlar uppgifter i USA och andra tjänster kan använda global infrastruktur.</p>
+        <p>Googles <a href="https://firebase.google.com/terms/data-processing-terms">dataskyddsvillkor, avsnitt 10</a>, beskriver överföringsskyddet: EU–US Data Privacy Framework för överföringar till certifierade Google-enheter och standardavtalsklausuler när de är tillämpliga. Underlag om skyddsåtgärder kan begäras via kontaktadressen ovan. Se också <a href="https://firebase.google.com/support/privacy">Firebase: integritet, behandling och lagring</a>.</p>
+        <p>Dessa informationssidor publiceras på GitHub Pages. GitHub beskriver behandlingen av webbtrafik i sin <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">integritetspolicy</a>.</p>
     </div>
 
     <div class="card">
-        <h2>6. Dina rättigheter (GDPR)</h2>
-        <p>Enligt dataskyddsförordningen (GDPR) har du rätt att:</p>
+        <h2>7. Lagring, radering och rättigheter</h2>
+        <p>Enligt artiklarna 15–21 i GDPR finns, när respektive förutsättningar är uppfyllda, rättigheter att:</p>
         <ul>
             <li>Få information om vilka uppgifter som behandlas</li>
+            <li>Få tillgång till och rättelse av uppgifter samt begära begränsning av behandlingen</li>
             <li>Begära radering av dina uppgifter</li>
             <li>Invända mot behandling</li>
-            <li>Exportera din data</li>
+            <li>Få ut uppgifter genom dataportabilitet när den rätten är tillämplig</li>
         </ul>
-        <p>Du kan radera ditt konto och all kopplad data via Premium-sidan i appen (Radera mitt konto). All data tas bort permanent från våra servrar. Lokala inställningar raderas genom att avinstallera appen.</p>
+        <p>Kontoradering finns i Inställningar &rarr; Konto &rarr; Radera konto och på Premium-sidan, för både gratis- och Premium-konton. Profil, quizhistorik, synkdata och yrkesmärken raderas genom ett serverflöde som kan återupptas vid fel. Ditt Google-konto och din Google Play-prenumeration raderas inte av detta flöde.</p>
+        <ul>
+            <li><strong>Profil och studieframsteg:</strong> sparas under kontots användning och tills kontot eller berörda uppgifter raderas. Det finns ingen automatisk radering av inaktiva konton.</li>
+            <li><strong>Begränsade raderings- och köpunderlag:</strong> internt konto-ID, hashvärden för kvitto, Google-identitet och köptoken samt status och tidsstämplar. De sparas så länge de behövs för att hantera raderingsbegäran, hindra återaktivering av det gamla konto-ID:t, kontrollera en giltig Play-köpbehörighet eller hantera ett konkret anspråk. Behovet omprövas regelbundet och vid begäran. Uppgifter som inte längre behövs för ändamålen raderas. Systemet har ingen automatisk kalenderstyrd borttagning av dessa poster.</li>
+            <li><strong>Tekniska funktionsloggar:</strong> det ordinarie Cloud Logging-lagret har 30 dagars lagring. Andra tjänste- och revisionsloggar följer respektive leverantörs villkor.</li>
+            <li><strong>Återställningsbara versioner:</strong> Firestore har sju dagars versionshistorik för återställning. Enligt Googles information kan borttagning av autentiseringsuppgifter från Firebase Auths aktiva system och säkerhetskopior ta upp till 180 dagar efter en raderingsbegäran. Detta är inte en gemensam tidsgräns för alla leverantörsdata.</li>
+        </ul>
+        <p>Lokala kopior på enheter som varit offline och leverantörernas loggar rensas inte omedelbart av kontoflödet. Se <a href="account-deletion.html">kontoradering, kvarvarande uppgifter och kontakt</a>. Raderingsbegäranden och invändningar prövas enligt GDPR; en begäran innebär inte automatiskt att varje undantag eller fortsatt lagring är motiverad.</p>
+        <p>Begäranden kan lämnas till <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a>. Enligt artikel 77 i GDPR finns rätt att lämna klagomål till en tillsynsmyndighet; i Sverige <a href="https://www.imy.se/privatperson/utfora-arenden/lamna-ett-klagomal/">Integritetsskyddsmyndigheten (IMY)</a>.</p>
+        <p>Lagtext: <a href="https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/introduktion-till-gdpr/dataskyddsforordningen-i-fulltext/">GDPR hos IMY</a>. Information om lagringstid och kriterier lämnas enligt artikel 13.2 a.</p>
     </div>
 
     <div class="card">
-        <h2>7. Barn</h2>
+        <h2>8. Barn</h2>
         <p>Appen är inte riktad till barn under 13 år. Appen innehåller yrkesrelaterat innehåll för ordningsvakter och är avsedd för vuxna.</p>
     </div>
 
     <div class="card">
-        <h2>8. Ändringar</h2>
+        <h2>9. Ändringar</h2>
         <p>Vi kan uppdatera denna sekretesspolicy. Eventuella ändringar meddelas via appuppdateringar.</p>
     </div>
 
     <div class="card">
-        <h2>9. Kontakt</h2>
+        <h2>10. Kontakt</h2>
         <p>Vid frågor om denna sekretesspolicy, kontakta oss:</p>
-        <p><strong>VivaxLogic</strong><br>E-post: <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a></p>
+        <p><strong>Julio Rene Martinez Jovel</strong><br>Enskild näringsidkare, VivaxLogic<br>E-post: <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a></p>
     </div>
 
     <div class="footer">

@@ -35,21 +35,22 @@
 </head>
 <body>
     <h1>Radera ditt OV App-konto</h1>
-    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-06-05</p>
+    <p class="subtitle">OV App av VivaxLogic &mdash; Senast uppdaterad: 2026-10-31</p>
     <span class="badge">Kontoradering</span>
 
     <div class="card">
         <h2>1. Så här raderar du ditt konto i appen</h2>
-        <p>Det snabbaste sättet att radera ditt konto och all tillhörande data är direkt i appen:</p>
+        <p>Kontoradering är tillgänglig för både gratiskonton och Premium-konton:</p>
         <ol>
             <li>Öppna OV App och logga in.</li>
             <li>Gå till <strong>Inställningar</strong>.</li>
-            <li>Välj <strong>Premium &amp; konto</strong>.</li>
+            <li>Öppna avsnittet <strong>Konto</strong>.</li>
             <li>Tryck på <strong>Radera konto</strong>.</li>
             <li>Bekräfta genom att skriva ordet <strong>RADERA</strong> i rutan.</li>
-            <li>Tryck på <strong>Radera permanent</strong>.</li>
+            <li>Tryck på <strong>Bekräfta med Google</strong> och bekräfta samma Google-konto som är inloggat i OV App.</li>
         </ol>
-        <p>Kontot och tillhörande data raderas omedelbart.</p>
+        <p>Detta raderar ditt OV App-konto, inte ditt Google-konto. Raderingen kan ta tid. När servern har tagit emot begäran kan den inte ångras. Vid ett tillfälligt fel försöker servern igen. Appen sparar ett privat raderingskvitto och visar status även efter omstart. Om status inte kan hämtas är slutförd radering ännu inte bekräftad.</p>
+        <p>Samma flöde finns på Premium-sidan. Avbruten Google-bekräftelse startar ingen ny radering. Rensning av appdata eller avinstallation är inte en begäran om radering av kontot i molnet.</p>
     </div>
 
     <div class="card">
@@ -61,7 +62,7 @@
             <li>Ämnesrad: <em>Begäran om kontoradering &ndash; OV App</em></li>
             <li>Den e-postadress du använde för att logga in (Google-konto).</li>
         </ul>
-        <p>Vi bekräftar och slutför raderingen inom 30 dagar.</p>
+        <p>Vi kan behöva bekräfta att begäran kommer från kontots ägare. Supporten återkommer om status och eventuell information som behövs.</p>
     </div>
 
     <div class="card">
@@ -69,21 +70,22 @@
         <p>När ditt konto raderas tas följande bort permanent:</p>
         <ul>
             <li>E-postadress och användar-ID (Firebase Authentication).</li>
-            <li>Kontoprofil och inställningar.</li>
-            <li>Premium-status och prenumerationsdata som lagras i vår databas.</li>
-            <li>Quizhistorik och resultat.</li>
-            <li>Alla personliga uppgifter kopplade till kontot i Cloud Firestore.</li>
+            <li>Kontoprofil och Premium-status i OV App.</li>
+            <li>Quizhistorik, resultat, studietid, synkdata och yrkesmärken i kontots databas.</li>
+            <li>Kontots lokala framsteg, kopior och yrkesmärken på enheten som slutför raderingsflödet. Andra kontons lokala kopior och appens visningsinställningar behålls.</li>
+            <li>Köphändelser som är knutna till kontot i vår databas, med undantag för det begränsade underlaget nedan.</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>4. Uppgifter som kan behållas</h2>
-        <p>Vissa uppgifter kan behållas under en begränsad tid av tekniska eller juridiska skäl:</p>
+        <p>Följande uppgifter hanteras separat från kontots profil och studieuppgifter:</p>
         <ul>
-            <li><strong>Tekniska skydds- och säkerhetssignaler</strong> &mdash; minimala signaler från Firebase App Check och Google Play Integrity kan finnas kvar en kort tid hos Google och innehåller inga personuppgifter. Appen samlar inte in analys- eller kraschdata.</li>
+            <li><strong>Raderings- och köpunderlag hos OV App</strong> &mdash; det gamla interna konto-ID:t, hashvärden för raderingskvitto, Google-identitet och köptoken samt raderingsstatus och tidsstämplar. Underlaget innehåller inte profilnamn, e-post eller quizresultat. Det sparas så länge det behövs för raderingsbegäran, spärren mot återaktivering, kontroll av en giltig Play-köpbehörighet eller ett konkret anspråk. Behovet omprövas regelbundet och vid begäran; uppgifter som inte längre behövs raderas. Systemet har ingen automatisk kalenderstyrd borttagning av dessa poster. Kontakta support för att få fortsatt lagring prövad.</li>
+            <li><strong>Tekniska loggar, skyddssignaler och säkerhetskopior</strong> &mdash; hanteras separat av tjänsteleverantörerna. Kontoradering innebär inte en omedelbar fysisk rensning av alla loggar, säkerhetskopior eller enheter som varit offline.</li>
             <li><strong>Köpkvitton hos Google Play</strong> &mdash; hanteras av Google enligt Google Plays policyer. OV App kontrollerar inte dessa uppgifter.</li>
-            <li><strong>Bokföringsunderlag</strong> &mdash; kan behållas i upp till 7 år enligt svensk bokföringslag (1999:1078) om du gjort ett köp.</li>
         </ul>
+        <p>En fortfarande giltig Play-köpbehörighet kan återställas till ett nytt OV App-konto med samma verifierade Google-identitet och en ny kontroll av köpet hos Google Play. Den gamla quizhistoriken återställs inte. Ett annat Google-konto godtas inte automatiskt som köpägare.</p>
     </div>
 
     <div class="card">
@@ -100,7 +102,7 @@
         <h2>6. Kontakt</h2>
         <p>Vid frågor om kontoradering eller personuppgifter:</p>
         <p><strong>E-post:</strong> <a href="mailto:ovappen@vivaxlogic.se">ovappen@vivaxlogic.se</a></p>
-        <p><strong>Utvecklare:</strong> VivaxLogic</p>
+        <p><strong>Personuppgiftsansvarig:</strong> Julio Rene Martinez Jovel, enskild näringsidkare under varumärket VivaxLogic.</p>
     </div>
 
     <div class="footer">
